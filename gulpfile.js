@@ -44,13 +44,22 @@ gulp.task('scripts', function() {
     .pipe(buffer())
 
     // Pipe the buffered vinyl to uglify.
-    .pipe(uglify())
+    // .pipe(uglify())
 
     // Rename the minified file.
     .pipe(rename('app.min.js'))
 
     // Ouput the vinyl file (make a real file)
     .pipe(gulp.dest('./build/'))
+});
+
+gulp.task('build', function() {
+  gulp.src('./index.html')
+    .pipe(gulp.dest('./build/'));
+
+  gulp.src('./styles/app.css')
+    .pipe(rename('app.min.css'))
+    .pipe(gulp.dest('./build/'));
 });
 
 gulp.task('default', function() {
