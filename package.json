@@ -1,0 +1,22 @@
+{
+  "name": "palettor",
+  "version": "0.1.0",
+  "description": "color palette picker",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conniegiann/palettor.v2.git"
+  },
+  "author": "conniegiann@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/conniegiann/palettor.v2/issues"
+  },
+  "homepage": "https://github.com/conniegiann/palettor.v2",
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}
