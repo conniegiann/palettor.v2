@@ -62,6 +62,14 @@ gulp.task('build', function() {
     .pipe(gulp.dest('./build/'));
 });
 
+gulp.task('watch', function() {
+  // Wacthes for changes in the scripts and styles directories and index.html.
+  gulp.watch('./scripts/*.js', ['scripts']);
+  gulp.watch('./styles/*.css', ['build']);
+  gulp.watch('./index.html', ['build']);  
+
+});
+
 gulp.task('default', function() {
 
   // Let's add some color.
