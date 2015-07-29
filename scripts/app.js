@@ -33,8 +33,8 @@ var Palette = React.createClass({
         <Display handleClick={this.setColor} color={c}/>
 
         <div id="footer">
-          <a style={{color: text}} href="https://twitter.com/conniecodes">t</a>
-          <a style={{color: text}} href="https://github.com/conniegiann/palettor.v2">g</a>
+          <a style={{color: text}} href="https://twitter.com/conniecodes"><i className="fa fa-twitter"></i></a>
+          <a style={{color: text}} href="https://github.com/conniegiann/palettor.v2"><i className="fa fa-github-alt"></i></a>
         </div>
 
       </div>
